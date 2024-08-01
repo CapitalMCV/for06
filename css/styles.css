@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2E2E2E;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body.final-background {
+    background: url('/image/appa.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Ajusta la opacidad según sea necesario */
+    pointer-events: none; /* Asegura que no interfiera con los clics */
+    z-index: -1; /* Coloca la superposición detrás del contenido */
+}
+
+
+.container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2E2E2E;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+#imageContainer1,
+#mensajeFinalContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.final-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Añade espacio entre las imágenes */
+}

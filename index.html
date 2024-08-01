@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div class="background-overlay hidden"></div>
+    <div class="container">
+        <h1>INSERT UR PHRASE</h1>
+        <input type="text" id="phrase" placeholder="Here" onkeypress="checkEnter(event)">
+        <button onclick="translatePhrase()">Translate</button>
+        <div id="imageContainer1" class="hidden">
+            <img id="image1" src="/image/image2.jpeg" alt="Imagen 1">
+            <p id="translatedText">NO SABE INGLES</p>
+        </div>
+        <div id="mensajeFinalContainer" class="hidden">
+            <p id="finalMessage">FELIZ DIA A LA NOVIA MAS BONITA!</p>
+            <div class="final-images">
+                <img id="image2" src="/image/image1.jpeg" alt="Imagen 2">
+                <img id="image3" src="/image/image3.webp" alt="Imagen 3">
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
